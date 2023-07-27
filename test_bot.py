@@ -8,7 +8,7 @@ CHANNEL_ID = 'Channel ID'
 class MyClient(discord.Client):
     async def on_ready(self):
         channel = self.get_channel(CHANNEL_ID)
-        await channel.send('안녕 난 퀴노봇이야 뭘 도와줄까?')
+        await channel.send('안녕 난 테스트 봇이야 뭘 도와줄까?')
 
     async def on_message(self, message):
         if message.author == self.user:
